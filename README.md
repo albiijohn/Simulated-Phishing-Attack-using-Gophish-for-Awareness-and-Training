@@ -1,5 +1,10 @@
 # Simulated Phishing Attack Using GoPhish for Awareness and Testing
 
+<div align="center">
+  <h2>Self Hosted Web Application Firewall</h2>
+  <img src="SS/safeline.png" alt="SafeLine WAF" width="900" height="600">
+</div>
+
 This project demonstrates how to simulate a phishing attack using [GoPhish](https://getgophish.com/), an open-source phishing framework. The goal is to help security professionals and organizations understand phishing techniques and improve their awareness and response.
 
 ---
@@ -20,7 +25,7 @@ gophish
 ```
 
 Once GoPhish is set up, it provides default login credentials and a link to access the dashboard.  
-<image tag>
+<img src="Gophish/Launching Gophish.png" width="900" height="600">
 
 </details>
 
@@ -37,7 +42,7 @@ You will configure the following before launching a campaign:
 - Users & Groups
 
 **Pre-requisite**: You’ll need an [App Password from your Google Account](https://support.google.com/accounts/answer/185833?sjid=453660624339540911-NC) (2FA must be enabled).  
-<image tag>
+<img src="Gophish/Go phish dashboard.png" width="900" height="600">
 
 </details>
 
@@ -53,7 +58,9 @@ Fill in:
 - App password
 
 This allows GoPhish to send test emails.  
-<image tag>
+<img src="Gophish/Creating a sending profile.jpg" width="900" height="600">
+
+<img src="Gophish/Testing email from Send profile.png" width="900" height="600">
 
 </details>
 
@@ -70,10 +77,13 @@ cd /usr/share/set/src/html/templates/google
 ls
 open index.template
 ```
+<img src="Gophish/Index.html page of google.png" width="900" height="600">
 
 Right-click and “View Page Source”  
 Copy the HTML and paste it into the **Landing Page > Import Site** section in GoPhish.  
-<image tag>
+<img src="Gophish/Html code for index.html.png" width="900" height="600">
+
+<img src="Gophish/Landing page.png" width="900" height="600">
 
 </details>
 
@@ -87,9 +97,12 @@ We use a real Google Security Alert email as bait.
 Steps:
 - Open the email
 - Click 3 dots > “Show original”
+
+<img src="Gophish/Sample Email template.png" width="900" height="600">
+
 - Copy the HTML
 - Paste into **Email Template > Import Email**  
-<image tag>
+<img src="Gophish/Creating email template.png" width="900" height="600">
 
 </details>
 
@@ -100,7 +113,7 @@ Steps:
 
 Add target emails under **Users & Groups**.  
 In this test, a single Gmail account is used for both attacker and target.  
-<image tag>
+<img src="Gophish/Creating a user group.png" width="900" height="600">
 
 </details>
 
@@ -110,7 +123,7 @@ In this test, a single Gmail account is used for both attacker and target.
 
 Go to **Campaigns** in the dashboard.  
 Verify your settings, then click **Launch Campaign**.  
-<image tag>
+<img src="Gophish/Launching attack.png" width="900" height="600">
 
 ---
 
@@ -118,11 +131,16 @@ Verify your settings, then click **Launch Campaign**.
 
 The target receives an email crafted using the email template.
 
+<img src="Gophish/phishing email.png" width="900" height="600">
+
 On clicking the phishing link:
 - They are redirected to the fake landing page (Google login clone)
-- URL is clearly different from Google’s official domain  
+- URL is clearly different from Google’s official domain
+
+<img src="Gophish/After clicking the link.png" width="900" height="600">
+  
 - Victim may unknowingly submit credentials  
-<image tag>
+<img src="Gophish/User entering credentials.png" width="900" height="600">
 
 ---
 
@@ -138,10 +156,10 @@ The dashboard shows the campaign timeline:
 Additional info includes:
 - Target’s device type
 - Browser used  
-<image tag>
+<img src="Gophish/Dashboard details.png" width="900" height="600">
 
 Clicking **View Details** reveals the credentials entered by the target.  
-<image tag>
+<img src="Gophish/Grabbed credentials.png" width="900" height="600">
 
 ---
 

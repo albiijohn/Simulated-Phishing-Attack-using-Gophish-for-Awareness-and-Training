@@ -8,6 +8,24 @@ This project demonstrates how to simulate a phishing attack using [GoPhish](http
 
 ---
 
+## 📑 Table of Contents
+
+- [1. Introduction](#1-introduction)
+- [2. Setup Process](#2-setup-process)
+  - [2.1 Launching GoPhish](#21-launching-gophish)
+  - [2.2 GoPhish Dashboard](#22-gophish-dashboard)
+  - [2.3 Creating a Sending Profile](#23-creating-a-sending-profile)
+  - [2.4 Setting Up a Landing Page](#24-setting-up-a-landing-page)
+  - [2.5 Creating an Email Template](#25-creating-an-email-template)
+  - [2.6 Creating Users/Groups](#26-creating-usersgroups)
+- [3. Launching the Attack](#3-launching-the-attack)
+- [4. Target’s Perspective](#4-targets-perspective)
+- [5. Attacker’s Dashboard](#5-attackers-dashboard)
+- [6. Conclusion](#6-conclusion)
+  - [6.1 How to Prevent Phishing Attacks](#61-how-to-prevent-phishing-attacks)
+
+---
+
 ## 1. Introduction
 
 Phishing is one of the most common and dangerous cyber threats where attackers trick users into revealing sensitive information. This project demonstrates a simulated phishing attack using GoPhish, an open-source phishing toolkit. It helps security professionals assess how users respond to phishing emails in a controlled environment. The goal is to understand the tactics used by attackers and train users to identify suspicious emails.

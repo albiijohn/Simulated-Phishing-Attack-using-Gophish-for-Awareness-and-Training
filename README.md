@@ -1,8 +1,7 @@
 # Simulated Phishing Attack Using GoPhish for Awareness and Testing
 
 <div align="center">
-  <h2>Self Hosted Web Application Firewall</h2>
-  <img src="SS/safeline.png" alt="SafeLine WAF" width="900" height="600">
+  <img src="Gophish/Gophish logo.png">
 </div>
 
 This project demonstrates how to simulate a phishing attack using [GoPhish](https://getgophish.com/), an open-source phishing framework. The goal is to help security professionals and organizations understand phishing techniques and improve their awareness and response.
